@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kuberestate.co.in/sitemap.xml

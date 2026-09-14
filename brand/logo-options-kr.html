@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kuber Estate — KR logo concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400..500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#000;--white:#fff;--canvas:#e5e5e5;--mist:#f3f3f3;--smoke:#979797;--slate:#444;--mint:#d1ffca;--yellow:#fff100}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--canvas);color:var(--black);font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.3;padding:32px 24px 64px}
+  h1{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:44px;line-height:.9;letter-spacing:-.02em;margin:0 0 8px}
+  .sub{color:var(--slate);font-size:16px;max-width:720px;margin:0 0 32px}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:-.02em;text-transform:uppercase;color:var(--smoke)}
+  .tag{display:inline-block;background:var(--mint);color:#000;border-radius:64px;padding:6px 12px;font-family:"JetBrains Mono",monospace;font-size:11px;text-transform:uppercase}
+  .concept{background:var(--white);border-radius:32px;padding:28px;margin-bottom:20px}
+  .concept header{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+  .concept h2{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:30px;line-height:1;margin:0;letter-spacing:-.01em}
+  .concept .why{color:var(--slate);margin:0 0 20px;max-width:760px}
+  .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+  .cell{background:var(--mist);border-radius:20px;padding:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:170px}
+  .cell.dark{background:#000;color:#fff}
+  .cell .mono{align-self:flex-start}
+  .cell.dark .mono{color:#979797}
+  .mark{width:88px;height:88px;color:#000}
+  .dark .mark{color:#fff}
+  .mark svg{width:100%;height:100%;display:block}
+  .tile{width:88px;height:88px;border-radius:24px;background:#000;color:#fff;display:flex;align-items:center;justify-content:center}
+  .tile .mark{width:64px;height:64px;color:#fff}
+  .lockup{display:flex;align-items:center;gap:12px;color:inherit}
+  .lockup .mark{width:40px;height:40px}
+  .word{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:28px;line-height:.95;letter-spacing:-.01em}
+  .word small{display:block;font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.06em;color:var(--smoke);margin-top:4px}
+  .stack{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+  .stack .mark{width:56px;height:56px}
+  .stack .word{font-size:22px}
+  .sizes{display:flex;align-items:flex-end;gap:16px}
+  .sizes .mark{width:16px;height:16px}.sizes .mark.s32{width:32px;height:32px}.sizes .mark.s48{width:48px;height:48px}
+  .note{color:var(--slate);margin-top:24px;max-width:760px}
+</style></head><body>
+<span class="tag">Kuber Estate · logo concepts</span>
+<h1 style="margin-top:14px">KR — three directions.</h1>
+<p class="sub">Every concept is one ligature: the K and the R share a spine and a leg. Each also carries the two ideas you asked for — <b>real estate</b> (a roof, a house, a building) and <b>always growing, always giving back</b> (an upward move, with the mint marking what comes back to the client). Solid black, one mint accent, works at favicon size.</p>
+
+<section class="concept">
+  <header><h2>KR 1 — Rise</h2><span class="mono">Arrow · plot</span></header>
+  <p class="why"><b>K+R:</b> one spine, the R's angular bowl, one shared leg. <b>Growth &amp; giving:</b> the K's upper arm breaks out of the bowl and becomes an arrow — the mint head is the return that goes back to the client. <b>Real estate:</b> the bowl's counter is a roof pitch, and the whole mark stands on a ground line — the plot. Cleanest and most 'brand-like' of the three.</p>
+  <div class="row">
+    <div class="cell"><span class="mono">Mark</span><div class="mark" id="a1"></div></div>
+    <div class="cell dark"><span class="mono">On black</span><div class="mark" id="a2"></div></div>
+    <div class="cell"><span class="mono">App / favicon tile</span><div class="tile"><div class="mark" id="a3"></div></div></div>
+    <div class="cell" style="grid-column:span 2"><span class="mono">Horizontal lockup</span><div class="lockup"><div class="mark" id="a4"></div><div class="word">Kuber Estate<small>Real estate investment consultants · Pune</small></div></div></div>
+    <div class="cell"><span class="mono">Stacked</span><div class="stack"><div class="mark" id="a5"></div><div class="word">Kuber<br>Estate</div></div></div>
+    <div class="cell"><span class="mono">16 / 32 / 48 px</span><div class="sizes"><div class="mark" id="a6"></div><div class="mark s32" id="a7"></div><div class="mark s48" id="a8"></div></div></div>
+  </div>
+</section>
+
+<section class="concept">
+  <header><h2>KR 2 — House</h2><span class="mono">Roof · window</span></header>
+  <p class="why"><b>K+R:</b> the R's bowl <i>is</i> a house — gable roof, wall, floor — sitting on the shared K/R spine, with the shared leg below. <b>Real estate:</b> unmistakable, even at 16px. <b>Growth &amp; giving:</b> the mint arrow in the window — value rising inside the home, and the light that's on for the client. Most literal and most memorable.</p>
+  <div class="row">
+    <div class="cell"><span class="mono">Mark</span><div class="mark" id="b1"></div></div>
+    <div class="cell dark"><span class="mono">On black</span><div class="mark" id="b2"></div></div>
+    <div class="cell"><span class="mono">App / favicon tile</span><div class="tile"><div class="mark" id="b3"></div></div></div>
+    <div class="cell" style="grid-column:span 2"><span class="mono">Horizontal lockup</span><div class="lockup"><div class="mark" id="b4"></div><div class="word">Kuber Estate<small>Real estate investment consultants · Pune</small></div></div></div>
+    <div class="cell"><span class="mono">Stacked</span><div class="stack"><div class="mark" id="b5"></div><div class="word">Kuber<br>Estate</div></div></div>
+    <div class="cell"><span class="mono">16 / 32 / 48 px</span><div class="sizes"><div class="mark" id="b6"></div><div class="mark s32" id="b7"></div><div class="mark s48" id="b8"></div></div></div>
+  </div>
+</section>
+
+<section class="concept">
+  <header><h2>KR 3 — Steps</h2><span class="mono">Floors · skyline</span></header>
+  <p class="why"><b>K+R:</b> spine, stepped bowl, shared leg. <b>Real estate:</b> the spine is a tower and the bowl climbs like floors of a building — a small skyline. <b>Growth &amp; giving:</b> three steps rising to the right, and the top step is mint: the level we bring the client to. Most 'investment' of the three.</p>
+  <div class="row">
+    <div class="cell"><span class="mono">Mark</span><div class="mark" id="c1"></div></div>
+    <div class="cell dark"><span class="mono">On black</span><div class="mark" id="c2"></div></div>
+    <div class="cell"><span class="mono">App / favicon tile</span><div class="tile"><div class="mark" id="c3"></div></div></div>
+    <div class="cell" style="grid-column:span 2"><span class="mono">Horizontal lockup</span><div class="lockup"><div class="mark" id="c4"></div><div class="word">Kuber Estate<small>Real estate investment consultants · Pune</small></div></div></div>
+    <div class="cell"><span class="mono">Stacked</span><div class="stack"><div class="mark" id="c5"></div><div class="word">Kuber<br>Estate</div></div></div>
+    <div class="cell"><span class="mono">16 / 32 / 48 px</span><div class="sizes"><div class="mark" id="c6"></div><div class="mark s32" id="c7"></div><div class="mark s48" id="c8"></div></div></div>
+  </div>
+</section>
+
+<p class="note">Wordmark is Anton, the same face as the site headlines, so logo and page read as one system. Colours: black, white, mint #d1ffca. No gradients, no shadows. Tell me which one — or which parts to combine (e.g. the house bowl from KR 2 with the arrow from KR 1) — and I'll refine the proportions and roll it out.</p>
+
+<script>
+var A='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M24 32v58M24 38h36M32 66l40-40M32 66l46 26" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/><path d="M89 7L82 34 62 14z" fill="#d1ffca" stroke="currentColor" stroke-width="3" stroke-linejoin="miter"/><path d="M12 99h76" stroke="currentColor" stroke-width="4"/></svg>';
+var B='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M24 30v62M24 40l26-26 26 26v22H24M32 62l48 30" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter"/><path d="M50 54V30M40 40l10-10 10 10" fill="none" stroke="#d1ffca" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+var C='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M24 22v70M24 52h16V38h16V24h18v40H24M32 64l48 28" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter"/><path d="M56 24h18" fill="none" stroke="#d1ffca" stroke-width="12" stroke-linecap="square"/></svg>';
+[['a',A],['b',B],['c',C]].forEach(function(p){for(var i=1;i<=8;i++){var el=document.getElementById(p[0]+i);if(el)el.innerHTML=p[1];}});
+</script>
+</body></html>
