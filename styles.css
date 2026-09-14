@@ -1037,3 +1037,22 @@ body { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
 }
 @media (max-width: 480px) { .brand__slogan { display: none; } .brand--center .brand__word { font-size: 14px; } }
 .panel--home { padding-bottom: var(--s-40); }
+
+/* ---- Brand lockup: big mark, name below, slogan below that ---- */
+:root { --nav-h: 9.5rem; }
+.nav__inner { height: var(--nav-h); align-items: center; }
+.brand--center { flex-direction: column; gap: 8px; text-align: center; }
+.brand--center .brand__mark { width: 58px; height: 42px; }
+.brand__text { align-items: center; gap: 5px; }
+.brand--center .brand__word { font-size: 21px; letter-spacing: .26em; padding-left: .26em; }
+.brand__slogan { font-size: 11px; letter-spacing: .14em; }
+.nav__side { align-self: center; }
+@media (max-width: 1068px) { :root { --nav-h: 8.5rem; } .nav__inner { height: 8.5rem; } }
+@media (max-width: 734px) {
+  :root { --nav-h: 7.25rem; } .nav__inner { height: 7.25rem; }
+  .brand--center .brand__mark { width: 44px; height: 32px; }
+  .brand--center .brand__word { font-size: 15px; letter-spacing: .2em; padding-left: .2em; }
+  .brand__slogan { font-size: 8.5px; letter-spacing: .1em; display: block; white-space: nowrap; }
+}
+@media (max-width: 480px) { .brand__slogan { display: block; font-size: 8px; } }
+.footer .brand { flex-direction: row; }
