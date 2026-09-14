@@ -1,3 +1,10 @@
 .DS_Store
 .claude/
 *.tmp.js
+
+# working files live in the private source repo (kuber-estate-source)
+build.py
+src/
+brand/
+index.v1.html
+README.md
