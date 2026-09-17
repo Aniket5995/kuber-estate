@@ -285,6 +285,27 @@
     update(); start();
   });
 
+  /* ---------- 2j. Privacy notice + gated Google Map ---------- */
+  var consent = document.getElementById('consent');
+  var mapBox = document.getElementById('mapBox');
+  var store = function (k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
+  var loadMap = function () {
+    if (!mapBox || mapBox.querySelector('iframe')) return;
+    var f = document.createElement('iframe');
+    f.src = mapBox.getAttribute('data-src'); f.title = 'Shreepal Green City on Google Maps'; f.loading = 'lazy'; f.referrerPolicy = 'no-referrer-when-downgrade'; f.allowFullscreen = true;
+    mapBox.innerHTML = ''; mapBox.appendChild(f);
+  };
+  var choice = store('ke-consent');
+  if (consent && !choice) { consent.hidden = false; }
+  if (consent) {
+    var accept = document.getElementById('consentAccept'), decline = document.getElementById('consentDecline');
+    if (accept) accept.addEventListener('click', function () { store('ke-consent', 'accept'); consent.hidden = true; loadMap(); });
+    if (decline) decline.addEventListener('click', function () { store('ke-consent', 'decline'); consent.hidden = true; });
+  }
+  if (choice === 'accept') loadMap();
+  var mapLoad = document.getElementById('mapLoad');
+  if (mapLoad) mapLoad.addEventListener('click', loadMap);
+
   /* ---------- 3. Enquiry form ---------- */
   var form = document.getElementById('enquiryForm');
   var status = document.getElementById('formStatus');

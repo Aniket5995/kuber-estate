@@ -213,7 +213,7 @@
     <section class="panel" id="location">
       <div class="wrap">
         <div class="panel__head"><span class="mono panel__num">Location</span><h2 class="display">Malegaon Khurd, Baramati.</h2><p class="sub">Malegaon Khurd, Baramati · Pune district, Maharashtra 413115</p></div>
-        <div class="map"><iframe src="https://www.google.com/maps?q=Shrilal+green+city,+Malegaon+Khurd,+Malegaon+Bk,+Maharashtra+413115&output=embed" title="Shreepal Green City on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+        <div class="map" id="mapBox" data-src="https://www.google.com/maps?q=Shrilal+green+city,+Malegaon+Khurd,+Malegaon+Bk,+Maharashtra+413115&output=embed"><div class="map__gate"><p>The map is loaded from Google. <button type="button" class="btn btn--fill btn--sm" id="mapLoad">Show map</button></p></div></div>
         <div class="btn-row" style="margin-top:16px"><a class="btn btn--ghost" href="https://maps.app.goo.gl/Z6JB9nNkFTmxgm1y5" target="_blank" rel="noopener">Get directions</a></div>
       </div>
     </section>
@@ -273,7 +273,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p>© <span id="year">2026</span> Kuber Estate. All rights reserved.</p>
+        <p>© <span id="year">2026</span> Kuber Estate. All rights reserved. · <a href="privacy.html">Privacy</a></p>
         <p>Property details, prices and expected returns are indicative, subject to verification and change without notice. Kuber Estate is an independent consultancy and is not the developer of the projects listed.</p>
       </div>
     </div>
@@ -293,6 +293,13 @@
     </div>
   </nav>
 
+  <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Privacy notice" hidden>
+    <div class="consent__body">
+      <strong>Privacy &amp; cookies</strong>
+      <p>We don't set tracking cookies. The embedded Google Map and our fonts are loaded from Google, which may set its own cookies. See our <a href="privacy.html">privacy notice</a>.</p>
+    </div>
+    <div class="consent__actions"><button type="button" class="btn btn--ghost btn--sm" id="consentDecline">Decline</button><button type="button" class="btn btn--fill btn--sm" id="consentAccept">Accept</button></div>
+  </div>
   <script src="script.js?v=3" defer></script>
 </body>
 </html>
